@@ -42,7 +42,7 @@ export class Home extends React.Component {
                     Your name is {this.props.name}, and your age is {this.props.age}.
                     You reside in {this.props.userData.city}, {this.props.userData.state}
                 </p>
-                <h2>Hobbies</h2>
+                <h2>{this.state.initialHobbies.length} Hobbies </h2>
                 <ul>
                     {this.state.initialHobbies.map((hobby, index) => {
                         return (
